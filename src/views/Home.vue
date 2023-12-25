@@ -57,7 +57,9 @@ const generateLink = () => {
             v-model.title="secret"
             placeholder="Enter your secret here..."
           />
-          <Button :text="'Generate Link'" />
+          <Button :text="'Generate Link'" 
+            :disabled="linkStore.loading"
+          />
         </form>
       </section>
 

@@ -11,8 +11,9 @@ defineProps({
 
 <template>
   <button
-    class="text-white px-4 py-2 rounded-md bg-black"
+    class="text-white px-4 py-2 rounded-md bg-black disabled:bg-gray-500"
     @click="$emit('click')"
+
   >
     {{ text }}
   </button>
